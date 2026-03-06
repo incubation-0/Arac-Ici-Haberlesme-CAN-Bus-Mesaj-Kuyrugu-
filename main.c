@@ -6,7 +6,6 @@ int main() {
     int kapasite, secim;
     MesajKuyrugu kuyruk;
     
-
     
     printf("[SİSTEM] Lütfen CAN Bus mesaj kuyruğu kapasitesini giriniz: ");
     scanf("%d", &kapasite); 
