@@ -4,18 +4,22 @@
 typedef struct{
     int mesaj_id;
     float veri;
-    char gönderen[30];
+    char gonderen[30];
     
-}; CAN_mesaj;
+} CAN_Mesaj;
 
 
 typedef struct{
-    CAN_mesaj *mesajlar;
+    CAN_Mesaj *mesajlar;
     int front;
     int rear;
     int kapasite;
     int count;
 
 }MesajKuyrugu;
+
+void enqueue(MesajKuyrugu *kuyruk, CAN_Mesaj mesaj);
+CAN_Mesaj dequeue(MesajKuyrugu *kuyruk);
+void bekleyenleri_goster(MesajKuyrugu *kuyruk);
 
 #endif
